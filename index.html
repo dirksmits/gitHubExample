@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<div>
+		<h1>Budgetr</h1>
+	</div>
+
+	<div id="selectCategories">
+		<form>
+			<label for="categories">Select categories</label><br>
+			<input type="checkbox" name="category" value="housing">Housing<br>
+			<input type="checkbox" name="category" value="energy">Energy<br>
+			<input type="checkbox" name="category" value="transport">Transport<br>
+		</form>
+	</div>	
+
+	<div class="category" id="housing">
+		<h1>Housing</h1>
+		<form action="/process" method="POST">
+			<label for="budget">Initial Budget</label>
+			<input id="initialBudget" type="text" name="initialBudget"><br>
+			<label for="expenses">Expenses</label>
+			<input id="expenses" type="text" name="expenses"><br>
+<!-- 			<label for="remainingBudget">Remaining Budget</label>
+			<input id="remainingBudget" type="text" name="remainingBudget"><br> -->
+		</form>
+		<button id="submit">Update your budget status</button>
+	</div>
+
+
+
+	<div class="statusBar">
+  			<div class="statusBudget"></div>
+	</div>
+	
+
+</body>
+</html>
